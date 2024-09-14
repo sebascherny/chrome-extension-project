@@ -1,4 +1,6 @@
 
 *pyc
 */__pycache__/
-
+notification_project/db.sqlite3
+notification_project/env/
+notification_project/events.log
