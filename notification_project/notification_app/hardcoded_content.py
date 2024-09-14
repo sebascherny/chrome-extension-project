@@ -13,7 +13,7 @@ NOTIFICATION_CONTENT = {
         <div>
             <div style="display: flex;">
                 <img width=40px height=40px src="https://cdn-icons-png.flaticon.com/512/4885/4885933.png"></img>
-                <h1 style="align-self: center;">Should you be here?</h1>
+                <h1 style="align-self: center; font-weight: bold; font-size: 26px;">Should you be here?</h1>
             </div>
             <p>Unless it's a personal trip, then it's really none of our business.</p>
             <p style="font-size: 60%">Leave a comment?</p>
