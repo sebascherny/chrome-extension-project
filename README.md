@@ -32,6 +32,8 @@ python manage.py runserver 0.0.0.0:8001
 
 Navigate to one of the desired web pages (https://www.hilton.com, https://www.flytap.com, https://www.fctgl.com) and check that a notification is displayed at the top right of the page.
 
+The notification in www.hilton.com is the most similar to the one given in the PDF requirements.
+
 ## Django Admin
 
 First, create an admin user running `python manage.py createsuperuser` in a console after following the first steps as above.

@@ -63,16 +63,6 @@ function displayNotification(content) {
     const notificationDiv = document.createElement('div');
     notificationDiv.id = 'custom-notification';
     notificationDiv.innerHTML = `<div>${content}</div>`;
-    const dismissButton = document.createElement('button');
-    dismissButton.id = 'dismiss-btn';
-    dismissButton.innerHTML = "IT'S A PERSONAL TRIP";
-    dismissButton.onclick = dismiss_click;
-    notificationDiv.appendChild(dismissButton);
-    const acknowledgeButton = document.createElement('button');
-    acknowledgeButton.id = 'acknowledge-btn';
-    acknowledgeButton.innerHTML = "GO TO FCM HUB";
-    acknowledgeButton.onclick = acknowledge_click;
-    notificationDiv.appendChild(acknowledgeButton);
     const closeButton = document.createElement('button');
     closeButton.id = 'close-notif-btn';
     closeButton.className = 'close-btn';
@@ -80,6 +70,12 @@ function displayNotification(content) {
     closeButton.onclick = dismiss_click;
     notificationDiv.appendChild(closeButton);
     document.body.appendChild(notificationDiv);
+    if (document.getElementById('acknowledge-btn')) {
+        document.getElementById('acknowledge-btn').onclick = acknowledge_click;
+    }
+    if (document.getElementById('dismiss-btn')) {
+        document.getElementById('dismiss-btn').onclick = dismiss_click;
+    }
     // Notify backend that the notification has been displayed
     notifyBackend('displayed');
 }

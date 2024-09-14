@@ -19,13 +19,15 @@ NOTIFICATION_CONTENT = {
             <p style="font-size: 60%">Leave a comment?</p>
             <input id="comment_input_in_notification" style="margin-bottom: 20px; border: 1px solid black;"></input>
         </div>    
+        <button id="dismiss-btn">IT'S A PERSONAL TRIP</button>
+        <button id="acknowledge-btn">GO TO FCM HUB</button>
 """,
     FLYTAP_URL: """
     <div>
         <h1>Planning on flying??</h1>
-        <div style="display: none; position: absolute; bottom: 20px;">
-            <button style="margin-right: 20px;" onclick="acknowledge_click();">OK</button>
-            <button style="margin-right: 20px;" onclick="dismiss_click();">Bye</button>
+        <div style="display: flex; position: absolute; bottom: 20px;">
+            <button id="acknowledge-btn" style="margin-right: 20px;">OK</button>
+            <button id="dismiss-btn" style="margin-right: 20px;">Bye</button>
         </div>
     </div>""",
     FCTGL_URL: """
