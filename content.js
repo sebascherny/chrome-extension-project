@@ -44,7 +44,7 @@ function remove_notification_divs() {
 function acknowledge_click() {
     notifyBackend('acknowledged');
     // remove_notification_divs();
-    window.open("http://www.fcm.com/", "_blank");
+    window.open("https://www.fcmtravel.com/en-us/technology/fcm-extension", "_blank");
 }
 
 window.byebye = dismiss_click;
